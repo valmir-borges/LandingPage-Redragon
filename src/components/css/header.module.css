@@ -4,7 +4,8 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: white;
-    font-weight: bold;
+}
+body{
     background-color: black;
 }
 header{
@@ -12,6 +13,8 @@ header{
     background-color: black;
     padding: 2rem 20%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .sectionheader{
     width: 100%;
@@ -22,7 +25,12 @@ header{
     justify-content: space-between;
 }
 .divlogo{
-    width: 15%;
+    width: 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
 }
 .divlogo img{
     width: 100%;
@@ -40,12 +48,90 @@ header{
     align-items: center;
 }
 .divtext a:hover{
-    border-bottom: 2px solid #EF3446;
+    transition-timing-function: ease;
+    transition-duration: 0.7s;
+    color: #EF3446;
+    border-radius: 5px;
     cursor: pointer;
-    transition-duration: 0.5s;
 }
 .divsuporte a:hover{
-    border-bottom: 2px solid #EF3446;
+    transition-timing-function: ease;
+    transition-duration: 0.7s;
+    color: #EF3446;
+    border-radius: 5px;
     cursor: pointer;
-    transition-duration: 0.5s;
+}
+.textmenu{
+    font-size: 1.1rem;
+}
+.homemobile{
+    display: none;
+}
+.mobilemenu {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.mobilemenu span{
+    display: block;
+    margin: 1.5rem 0;
+}
+.mobilemenu a:hover{
+    transition-timing-function: ease;
+    transition-duration: 0.7s;
+    color: #EF3446;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1440px){
+    .divlogo{
+        width: 18%;
+    }
+}
+@media screen and (max-width: 1024px){
+    header{
+        width: 100%;
+        background-color: black;
+        padding: 2rem 15%;
+        box-sizing: border-box;
+    }
+    .divlogo{
+        width: 22%;
+    }
+    .divtext {
+        gap: 1.2rem;
+    }
+    .divsuporte{
+        gap: 1.2rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .divtext, .divsuporte{
+        display: none;
+    }
+    .divlogo{
+        width: 100%;
+    }
+    .homemobile{
+        display: block;
+        font-weight: bold;
+    }
+    .textmenu{
+        font-size: 1.3em;
+    }
+    .divlogo{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .divlogo{
+        width: 100%;
+    }
+    .divlogo{
+        flex-direction: column;
+    }
+    .textmenu{
+        font-size: 1.1rem;
+    }
 }

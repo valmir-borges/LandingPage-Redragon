@@ -1,25 +1,43 @@
 import Style from "./css/header.module.css";
 import LogoRedragon from './img/Logo-Redragon.png'
 import Search from './img/Search-Icon.png'
+import React, {useState} from "react";
+
 function Header (){
-    return(
+    const [ exibe, setExibe ] = useState( "none" );
+
+    function blockmobilemenu(e){
+        e.preventDefault();
+        if( exibe == "none" )
+          setExibe( "block" );
+        else
+          setExibe( "none" );
+      }
+        return(
         <>
             <header>
-                <section class={Style.sectionheader}>
-                    <div class={Style.divlogo}>
+                <section className={Style.sectionheader}>
+                    <div className={Style.divlogo}>
                         <img src={LogoRedragon} alt="Logo Redragon"/>
+                        <span onClick={(e) => blockmobilemenu(e)}><a href="" className={`${Style.textmenu} ${Style.homemobile}`}>Produtos</a></span>
                     </div>
-                    <div class={Style.divtext}>
-                        <span><a href="">Produtos</a></span>
-                        <span><a href="">Negócios</a></span>
-                        <span><a href="">Lojas</a></span>
-                        <span><a href="">Sobre</a></span>
+                    <div className={Style.divtext}>
+                        <span><a href="" className={Style.textmenu}>Produtos</a></span>
+                        <span><a href="#socio" className={Style.textmenu}>Sócio</a></span>
+                        <span><a href="" className={Style.textmenu}>Lojas</a></span>
+                        <span><a href="" className={Style.textmenu}>Sobre</a></span>
                     </div>
-                    <div class={Style.divsuporte}>
-                        <span><a href="">Suporte</a></span>
+                    <div className={Style.divsuporte}>
+                        <span><a href="" className={Style.textmenu}>Suporte</a></span>
                         <img src={Search} alt=""/>
                     </div>
                 </section>
+                <div className={Style.mobilemenu} style={{ display: exibe }}>
+                        <span><a href="" className={Style.textmenu}>Sócio</a></span>
+                        <span><a href="" className={Style.textmenu}>Lojas</a></span>
+                        <span><a href="" className={Style.textmenu}>Sobre</a></span>
+                        <span><a href="" className={Style.textmenu}>Suporte</a></span>
+                </div>
             </header>
         </>
     );

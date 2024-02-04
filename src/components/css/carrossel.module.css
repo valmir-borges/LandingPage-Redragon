@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 2rem auto;
+    align-items: center;
+    text-align: center;
+}
+.container h2{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.container span{
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.slideitem{
+    display: block;
+    margin: 0 auto;   
+    border-radius: 5px;
+}

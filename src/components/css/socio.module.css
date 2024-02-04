@@ -3,6 +3,7 @@ main{
     padding: 2rem 25%;
     box-sizing: border-box;
     border-bottom: 1px solid red;
+    margin-top: 1rem;
 }
 .sectionsocio{
     display: flex;
@@ -47,6 +48,7 @@ main{
     border-radius: 10px;
     padding: 0.3rem 0.3rem;
     color: black;
+    border: none;
 }
 .divsociotext form .inputsubmit{
     width: 30%;
@@ -56,4 +58,8 @@ main{
     color: white;
     padding: 0.3rem 0.3rem;
     font-weight: bolder;
+    border: none;
+}
+.spanred{
+    color: #F6031A;
 }
