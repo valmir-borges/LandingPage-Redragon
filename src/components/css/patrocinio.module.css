@@ -1,0 +1,46 @@
+.patrocinio{
+    width: 100%;
+    padding: 2rem 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-sizing: border-box;
+}
+.patrociniotime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+.patrociniotimeimg {
+    width: 25%;
+}
+.patrociniotimeimg img{
+    width: 100%;
+}
+.patrocinioname{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.patrociniored{
+    color: #C3291F;
+}
+.patrocinioorange{
+    color: #FF6600;
+}
+.patrociniotext{
+    font-size: 1.3rem;
+    font-weight: normal;
+    width: 75%;
+    margin-bottom: 5rem;
+}
+.borderpatrocinio {
+    border-bottom: 2px solid #F52518;
+}
+.patrociniolosgrandesimg {
+    width: 15%;
+}
+.patrociniolosgrandesimg img{
+    width: 100%;
+}
