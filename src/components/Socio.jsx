@@ -1,5 +1,5 @@
 import SocioImage from './img/Socio-image.png'
-import Style from './css/socio.module.css'
+import Style from './css/socio.module.css';
 function Socio (){
     return(
         <>
