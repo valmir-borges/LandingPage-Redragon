@@ -7,10 +7,10 @@ import 'swiper/css/effect-fade'
 function App() {
   return (
     <>
-        <Header/>
-        <Socio/>
-        <Carrossel/>
-        <Patrocinio/> 
+      <Header/>
+      <Socio/>
+      <Carrossel/>
+      <Patrocinio/>
     </>
   );
 }

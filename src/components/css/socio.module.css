@@ -9,6 +9,7 @@ main{
     display: flex;
     flex-direction: row;
     gap: 5rem;
+    box-sizing: border-box;
 }
 .divsocioimg img{
     width: 100%;
@@ -28,7 +29,7 @@ main{
     width: 52%;
 }
 .divsociotext h2{
-    font-size: 3vh;
+    font-size: 2rem;
 }
 .divsociotext form label{
     display: none;
@@ -59,7 +60,45 @@ main{
     padding: 0.3rem 0.3rem;
     font-weight: bolder;
     border: none;
+    box-sizing: border-box;
 }
 .spanred{
     color: #F6031A;
+}
+@media screen and (max-width: 1024px){
+    main{
+        padding: 2rem 20%;
+    }
+    .divsocioimg{
+        width: 70%;
+    }
+    .divsociotext h2{
+        font-size: 1.7rem;
+    }
+    .sectionsocio{
+        gap: 3rem;
+    }
+    .divsociotext form{
+        height: max-content;
+    }
+    .divsociotext form{
+        flex-direction: column;
+    }
+    .divsociotext form .inputemail{
+        height: 2rem;
+        width: 100%;
+    }
+    .divsociotext form .inputsubmit{
+        height: 2rem;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    .divsocioimg{
+        display: none;
+    }
+    .divsociotext{
+        margin: 0 auto;
+        width: 100%;
+    }
 }
