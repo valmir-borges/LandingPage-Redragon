@@ -44,3 +44,43 @@
 .patrociniolosgrandesimg img{
     width: 100%;
 }
+@media screen and (max-width: 1024px){
+    .patrocinioname{
+        font-size: 1.7rem;
+    }
+    .patrociniotext{
+        font-size: 1.2rem;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px){
+    .patrociniotimeimg {
+        width: 40%;
+    }
+    .patrociniotext{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .patrociniolosgrandesimg {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 425px){
+    .patrociniotext{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .patrociniotimeimg {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .patrociniotimeimg {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    .patrociniolosgrandesimg {
+        width: 40%;
+    }
+}
