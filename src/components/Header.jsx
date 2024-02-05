@@ -19,10 +19,10 @@ function Header (){
                 <section className={Style.sectionheader}>
                     <div className={Style.divlogo}>
                         <img src={LogoRedragon} alt="Logo Redragon"/>
-                        <span onClick={(e) => blockmobilemenu(e)}><a href="" className={`${Style.textmenu} ${Style.homemobile}`}>Produtos</a></span>
+                        <span onClick={(e) => blockmobilemenu(e)}><a href="#carrossel" className={`${Style.textmenu} ${Style.homemobile}`}>Lançamentos</a></span>
                     </div>
                     <div className={Style.divtext}>
-                        <span><a href="" className={Style.textmenu}>Produtos</a></span>
+                        <span><a href="#carrossel" className={Style.textmenu}>Lançamentos</a></span>
                         <span><a href="#socio" className={Style.textmenu}>Sócio</a></span>
                         <span><a href="" className={Style.textmenu}>Lojas</a></span>
                         <span><a href="" className={Style.textmenu}>Sobre</a></span>

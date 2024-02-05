@@ -3,6 +3,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/effect-fade'
 
 import Style from './css/carrossel.module.css'
 
@@ -15,14 +16,14 @@ import Image6 from './img/Image6-Carrossel.png'
 import Image7 from './img/Image7-Carrossel.png'
 
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper/modules';
 
 
 function Carrossel(){
     const slides = [Image1, Image2, Image3, Image4, Image5, Image6, Image7]
     return (
         <>
-        <div className={Style.container}>
+        <div className={Style.container} id='carrossel'>
             <h2>ULTIMOS LANÇAMENTOS</h2>
             <span>Periféricos de ultima geração para atender desde o uso básico até a elite</span>
             <Swiper
@@ -30,7 +31,8 @@ function Carrossel(){
               "--swiper-theme-color": "#ff0101s",
               "--swiper-navigation-color" : "#ff0101s"
             }}
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
+                effect='fade'
                 navigation
                 loop
                 onSwiper={(swiper) => console.log(swiper)}

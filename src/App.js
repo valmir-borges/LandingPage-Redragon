@@ -10,7 +10,7 @@ function App() {
         <Header/>
         <Socio/>
         <Carrossel/>
-        <Patrocinio/>
+        <Patrocinio/> 
     </>
   );
 }
