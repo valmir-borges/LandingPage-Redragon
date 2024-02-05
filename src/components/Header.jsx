@@ -25,7 +25,7 @@ function Header (){
                         <span><a href="#carrossel" className={Style.textmenu}>Lançamentos</a></span>
                         <span><a href="#socio" className={Style.textmenu}>Sócio</a></span>
                         <span><a href="" className={Style.textmenu}>Lojas</a></span>
-                        <span><a href="" className={Style.textmenu}>Sobre</a></span>
+                        <span><a href="#patrocinio" className={Style.textmenu}>Patrocínio</a></span>
                     </div>
                     <div className={Style.divsuporte}>
                         <span><a href="" className={Style.textmenu}>Suporte</a></span>
@@ -35,7 +35,7 @@ function Header (){
                 <div className={Style.mobilemenu} style={{ display: exibe }}>
                         <span><a href="" className={Style.textmenu}>Sócio</a></span>
                         <span><a href="" className={Style.textmenu}>Lojas</a></span>
-                        <span><a href="" className={Style.textmenu}>Sobre</a></span>
+                        <span><a href="#patrocinio" className={Style.textmenu}>Patrocínio</a></span>
                         <span><a href="" className={Style.textmenu}>Suporte</a></span>
                 </div>
             </header>

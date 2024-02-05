@@ -4,7 +4,7 @@ import Style from './css/patrocinio.module.css'
 function Patrocinio (){
     return(
         <>
-        <section className={Style.patrocinio}>
+        <section className={Style.patrocinio} id='patrocinio'>
             <div className={`${Style.patrociniotime} ${Style.borderpatrocinio}`}>
                 <span className={Style.patrocinioname}>PATROCINADOR OFICIAL DO <span className={Style.patrociniored}>FLAMENGO ESPORTS</span></span>
                 <div className={Style.patrociniotimeimg}>
