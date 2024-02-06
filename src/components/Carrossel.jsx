@@ -24,7 +24,6 @@ function Carrossel(){
         <>
         <div className={Style.container} id='carrossel'>
             <h2>ULTIMOS LANÇAMENTOS</h2>
-            <span>Periféricos de ultima geração para atender desde o uso básico até a elite</span>
             <Swiper style={{ "--swiper-theme-color": "#ff0101s","--swiper-navigation-color" : "#ff0101s"}} className={Style.teste}
                 pagination={{clickable: true}}
                 modules={[Navigation,Scrollbar,A11y]}
@@ -47,7 +46,7 @@ function Carrossel(){
                 },
                 1440:{
                     slidesPerView: 2,
-                    spaceBetween: 30,
+                    spaceBetween: 20,
                 }
                 }}
             >
