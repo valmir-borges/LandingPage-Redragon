@@ -72,12 +72,12 @@
         width: 100%;
     }
     .patrociniolosgrandesimg{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 2rem;
     }
     .patrociniotimeimg{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 2rem;
     }
