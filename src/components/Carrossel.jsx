@@ -6,8 +6,10 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay'
 
+//Import de Style próprio
 import Style from './css/carrossel.module.css'
 
+//Import de Imagens
 import Image1 from './img/Image1-Carrossel.png'
 import Image2 from './img/Image2-Carrossel.png'
 import Image3 from './img/Image3-Carrossel.png'
@@ -20,7 +22,6 @@ import Image9 from './img/Image9-Carrossel.png'
 
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, A11y,Autoplay, EffectFade } from 'swiper/modules';
-
 
 function Carrossel(){
     const slides = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9]
@@ -48,8 +49,4 @@ function Carrossel(){
         </>
     )
 }
-//            style={{
-//    "--swiper-theme-color": "#ff0101s",
-//    "--swiper-navigation-color" : "#ff0101s"
-//  }}
 export default Carrossel

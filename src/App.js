@@ -3,6 +3,7 @@ import Socio from './components/Socio'
 import Patrocinio from './components/Patrocinio'
 import Carrossel from './components/Carrossel';
 import 'swiper/css/effect-fade'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Socio/>
       <Carrossel/>
       <Patrocinio/>
+      <Footer/>
     </>
   );
 }
