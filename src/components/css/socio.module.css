@@ -2,7 +2,6 @@ main{
     width: 100%;
     padding: 2rem 25%;
     box-sizing: border-box;
-    border-bottom: 1px solid red;
 }
 .sectionsocio{
     display: flex;
