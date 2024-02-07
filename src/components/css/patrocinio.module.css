@@ -52,6 +52,12 @@
         font-size: 1.2rem;
         width: 90%;
     }
+    .patrociniotimeimg{
+        width: 30%;
+    }
+    .patrociniolosgrandesimg{
+        width: 20%;
+    }
 }
 @media screen and (max-width: 768px){
     .patrociniotimeimg {
@@ -66,18 +72,24 @@
     }
 }
 @media screen and (max-width: 425px){
+    .patrociniotime{
+        gap: 2rem;
+    }
     .patrociniotext{
         font-size: 1rem;
         width: 100%;
     }
     .patrociniotimeimg {
-        width: 45%;
+        width: 50%;
         margin-bottom: 2rem;
+    }
+    .patrociniolosgrandesimg{
+        width: 35%;
     }
 }
 @media screen and (max-width: 375px){
     .patrociniotimeimg {
-        width: 50%;
+        width: 60%;
         margin-bottom: 2rem;
     }
     .patrociniolosgrandesimg {

@@ -24,7 +24,9 @@ function Carrossel(){
         <>
         <div className={Style.container} id='carrossel'>
             <h2>ULTIMOS LANÇAMENTOS</h2>
-            <Swiper style={{ "--swiper-theme-color": "#ff0101s","--swiper-navigation-color" : "#ff0101s"}} className={Style.teste}
+            <Swiper style={{ 
+                "--swiper-pagination-color": "#FF031D",
+                "--swiper-theme-color" : "#FF031D"}} 
                 pagination={{clickable: true}}
                 modules={[Navigation,Scrollbar,A11y]}
                 navigation
