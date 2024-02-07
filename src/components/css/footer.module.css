@@ -16,10 +16,6 @@
     letter-spacing: 1px;
 }
 
-main {
-    height: 80vh;
-}
-
 footer {
     width: 100%;
     color: var(--color-neutral-40);
@@ -36,10 +32,13 @@ footer {
     padding: 3rem 3.5rem;
 }
 
-.footercontacts h1 {
-    margin-bottom: 0.75rem;
+.logo{
+    width: 65%;
+    box-sizing: border-box;
 }
-
+.logo img{
+    width: 100%;
+}
 .footersocialmedia {
     display: flex;
     gap: 2rem;
@@ -57,7 +56,7 @@ footer {
     transition: all 0.4s;
 }
 
-.footersocial_media .footerlink i {
+.footersocialmedia .footerlink i {
     font-size: 1.25rem;    
 }
 
@@ -117,7 +116,7 @@ footer {
 }
 
 .inputgroup button {
-    background-color: #7f37c9;
+    background-color: var(--color-neutral-40);
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
@@ -140,7 +139,16 @@ footer {
     padding: 1.5rem;
     font-weight: 100;
 }
-
+@media screen and (max-width: 1440px){
+    .logo{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .logo{
+        width: 90%;
+    }
+}
 @media screen and (max-width: 768px) {
     .footercontent {
         grid-template-columns: repeat(2, 1fr);

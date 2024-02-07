@@ -17,7 +17,7 @@ function Header (){
                         <span><a href="#patrocinio" className={Style.textmenu}>Patrocínio</a></span>
                     </div>
                     <div className={Style.divsuporte}>
-                        <span><a href="" className={Style.textmenu}>Suporte</a></span>
+                        <span><a href="#footer" className={Style.textmenu}>Suporte</a></span>
                         <img src={Search} alt=""/>
                     </div>
                 </section>

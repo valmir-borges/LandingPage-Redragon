@@ -5,17 +5,19 @@ function Footer(){
     return(
         <>
     <footer>
-        <div className={Style.footercontent}>
+        <div className={Style.footercontent} id='footer'>
             <div className={Style.footercontacts}>
-                <h1>Logo</h1>
-                <p>It's all about your dreams.</p>
+                <div className={Style.logo}>
+                    <img src={Logo} alt="" />
+                </div>
+                <p className={Style.sublogo}>Desafie seus limites</p>
 
                 <div className={Style.footersocialmedia}>
-                    <a href="#" className={`${Style.footerlink} ${Style.instagram}`}>
+                    <a href="https://www.instagram.com/redragonbrasil/" target='_blank' className={`${Style.footerlink} ${Style.instagram}`}>
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="#" className={`${Style.footerlink} ${Style.facebook}`}>
+                    <a href="https://www.facebook.com/redragonbr?locale=pt_BR" target='_blank' className={`${Style.footerlink} ${Style.facebook}`}>
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
@@ -27,54 +29,53 @@ function Footer(){
             
             <ul className={Style.footerlist}>
                 <li>
-                    <h3>Blog</h3>
+                    <h3>Ajuda e Suporte</h3>
                 </li>
                 <li>
-                    <a href="#" className={Style.footerlink}>Tech</a>
+                    <a href="#" className={Style.footerlink}>A empresa</a>
                 </li>
                 <li>
-                    <a href="#" className={Style.footerlink}>Adventures</a>
+                    <a href="#" className={Style.footerlink}>Segurança e Privacidade</a>
                 </li>
                 <li>
-                    <a href="#" className={Style.footerlink}>Music</a>
+                    <a href="#" className={Style.footerlink}>FAQ</a>
                 </li>
             </ul>
 
             <ul className={Style.footerlist}>
                 <li>
-                    <h3>Products</h3>
+                    <h3>Produtos</h3>
                 </li>
                 <li>
-                    <a href="#" className={Style.footerlink}>App</a>
+                    <a href="#" className={Style.footerlink}>Teclados</a>
                 </li>
                 <li>
-                    <a href="#" className={Style.footerlink}>Desktop</a>
+                    <a href="#" className={Style.footerlink}>Mouses</a>
                 </li>
                 <li>
-                    <a href="#" className={Style.footerlink}>Cloud</a>
+                    <a href="#" className={Style.footerlink}>Headsets</a>
                 </li>
             </ul>
 
             <div className={Style.footersubscribe}>
-                <h3>Subscribe</h3>
+                <h3>Inscreva-se Já</h3>
 
                 <p>
-                    Enter your e-mail to get notified about
-                    our news solutions
+                    Coloque seu e-mail para receber notificações sobre nossas novidades
                 </p>
 
                 <div className={Style.inputgroup}>
-                    <input type="email" id="email"/>
+                    <input type="email" id="email" placeholder='Insira seu Email...'/>
                     <button>
-                        <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-solid fa-envelope" style={{color: '#000000'}}></i>                    
                     </button>
                 </div>
             </div>
         </div>
 
         <div className={Style.footercopyright}>
-            &#169
-            2023 all rights reserved
+            Redragon &
+            2024 all rights reserved
         </div>
     </footer>
         </>
