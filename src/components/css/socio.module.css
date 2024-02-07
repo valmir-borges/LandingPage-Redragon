@@ -3,7 +3,6 @@ main{
     padding: 2rem 25%;
     box-sizing: border-box;
     border-bottom: 1px solid red;
-    margin-top: 1rem;
 }
 .sectionsocio{
     display: flex;
@@ -36,47 +35,79 @@ main{
 }
 .divsociotext form{
     width: 100%;
-    height: 2rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
-}
-.divsociotext form .inputemail{
-    height: 100%;
-    width: 65%;
-    background-color: white;
-    border-radius: 10px;
-    padding: 0.3rem 0.3rem;
-    color: black;
-    border: none;
-}
-.divsociotext form .inputsubmit{
-    width: 30%;
-    height: 2.5rem;
-    border-radius: 10px;
-    background-color: #EF3446;
-    color: white;
-    padding: 0.3rem 0.3rem;
-    font-weight: bolder;
-    border: none;
+    justify-content: space-between;
     box-sizing: border-box;
 }
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ffffff;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+    color: black;
+    height: 1.2rem; 
+    width: 70%;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+  .button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 10px;
+    width: 30%;
+    height: 2.7rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+  
+  .button:hover {
+    color: black;
+    box-shadow: inset 0 -100px 0 0 #ffffff;
+    border-color: none;
+    border: none;
+  }
+  
+  .button:active {
+    transform: scale(0.9);
+  }
 .spanred{
     color: #F6031A;
 }
+@media screen and (max-width: 1440px){
+    main{
+        padding: 2rem 18%;
+    }
+}
 @media screen and (max-width: 1024px){
     main{
-        padding: 2rem 20%;
+        padding: 2rem 16%;
     }
     .divsocioimg{
-        width: 70%;
+        width: 60%;
     }
     .divsociotext h2{
         font-size: 1.7rem;
     }
     .sectionsocio{
-        gap: 3rem;
+        gap: 2.5rem;
     }
     .divsociotext form{
         height: max-content;
@@ -84,21 +115,27 @@ main{
     .divsociotext form{
         flex-direction: column;
     }
-    .divsociotext form .inputemail{
-        height: 2rem;
-        width: 100%;
-    }
-    .divsociotext form .inputsubmit{
-        height: 2rem;
-        width: 50%;
+    .button{
+        width: 40%;
     }
 }
 @media screen and (max-width: 768px){
+    main{
+        padding: 2rem 20%;
+    }
     .divsocioimg{
         display: none;
     }
     .divsociotext{
         margin: 0 auto;
         width: 100%;
+    }
+}
+@media screen and (max-width: 425px){
+    main{
+        padding: 2rem 15%;
+    }
+    .divsociotext h2{
+        font-size: 1.5rem;
     }
 }

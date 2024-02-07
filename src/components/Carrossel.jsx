@@ -3,6 +3,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/effect-fade';
+import 'swiper/css/autoplay'
 
 import Style from './css/carrossel.module.css'
 
@@ -13,13 +15,15 @@ import Image4 from './img/Image4-Carrossel.png'
 import Image5 from './img/Image5-Carrossel.png'
 import Image6 from './img/Image6-Carrossel.png'
 import Image7 from './img/Image7-Carrossel.png'
+import Image8 from './img/Image8-Carrossel.png'
+import Image9 from './img/Image9-Carrossel.png'
 
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay, EffectFade } from 'swiper/modules';
 
 
 function Carrossel(){
-    const slides = [Image1, Image2, Image3, Image4, Image5, Image6, Image7]
+    const slides = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9]
     return (
         <>
         <div className={Style.container} id='carrossel'>
@@ -28,29 +32,11 @@ function Carrossel(){
                 "--swiper-pagination-color": "#FF031D",
                 "--swiper-theme-color" : "#FF031D"}} 
                 pagination={{clickable: true}}
-                modules={[Navigation,Scrollbar,A11y]}
+                modules={[Navigation,Scrollbar,A11y, EffectFade, Autoplay]}
+                autoplay={{delay: 4000}}
+                effect='fade'
                 navigation
-                spaceBetween={15}
-                slidesPerView={2}
                 loop
-                breakpoints={{
-                320: {
-                    slidesPerView: 1,
-                    },
-                425: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 1,
-                },
-                1024: {
-                    slidesPerView: 1,
-                },
-                1440:{
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                }
-                }}
             >
                 {slides.map(slides => 
                     <SwiperSlide>

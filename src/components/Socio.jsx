@@ -10,8 +10,8 @@ function Socio (){
                         <span>Se interessou? Cadastre-se já</span>
                         <form action="">
                             <label for="email">Insira seu email</label>
-                            <input type="email" placeholder="Insira seu email..." className={Style.inputemail}/>
-                            <input type="submit" value="CADASTRAR" className={Style.inputsubmit}/>
+                            <input type="text" autocomplete="off" name="text" class={Style.input} placeholder="Email..."/>
+                            <input type="submit" value="CADASTRAR" className={Style.button}/>
                         </form>
                     </div>
                     <div className={Style.divsocioimg}>

@@ -3,7 +3,7 @@
     padding: 2rem 20%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     box-sizing: border-box;
 }
 .patrociniotime{
@@ -12,12 +12,18 @@
     align-items: center;
     text-align: center;
     gap: 3rem;
+    padding: 3rem 0;
 }
 .patrociniotimeimg {
-    width: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
 }
 .patrociniotimeimg img{
-    width: 100%;
+    width: 22%;
 }
 .patrocinioname{
     font-size: 2rem;
@@ -32,17 +38,22 @@
 .patrociniotext{
     font-size: 1.3rem;
     font-weight: normal;
-    width: 75%;
+    width: 70%;
     margin-bottom: 5rem;
+    margin: auto 0;
 }
 .borderpatrocinio {
     border-bottom: 2px solid #F52518;
 }
 .patrociniolosgrandesimg {
-    width: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
 }
 .patrociniolosgrandesimg img{
-    width: 100%;
+    width: 15%;
 }
 @media screen and (max-width: 1024px){
     .patrocinioname{
@@ -50,49 +61,52 @@
     }
     .patrociniotext{
         font-size: 1.2rem;
-        width: 90%;
-    }
-    .patrociniotimeimg{
-        width: 30%;
-    }
-    .patrociniolosgrandesimg{
-        width: 20%;
     }
 }
 @media screen and (max-width: 768px){
-    .patrociniotimeimg {
-        width: 40%;
+    .patrocinioname{
+        font-size: 2.1rem;
     }
     .patrociniotext{
         font-size: 1.1rem;
         width: 100%;
     }
-    .patrociniolosgrandesimg {
-        width: 30%;
+    .patrociniolosgrandesimg{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .patrociniotimeimg{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .patrociniolosgrandesimg img{
+        width: 20%;
+    }
+    .patrociniotimeimg img{
+        width: 35%;
     }
 }
 @media screen and (max-width: 425px){
+    .patrocinio{
+        padding: 2rem 10%;
+    }
+    .patrocinioname{
+        font-size: 1.9rem;
+    }
     .patrociniotime{
         gap: 2rem;
     }
     .patrociniotext{
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 100%;
     }
-    .patrociniotimeimg {
+    .patrociniotimeimg img{
         width: 50%;
         margin-bottom: 2rem;
     }
-    .patrociniolosgrandesimg{
+    .patrociniolosgrandesimg img{
         width: 35%;
-    }
-}
-@media screen and (max-width: 375px){
-    .patrociniotimeimg {
-        width: 60%;
-        margin-bottom: 2rem;
-    }
-    .patrociniolosgrandesimg {
-        width: 40%;
     }
 }

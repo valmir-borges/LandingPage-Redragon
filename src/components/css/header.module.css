@@ -25,7 +25,7 @@ header{
     justify-content: space-between;
 }
 .divlogo{
-    width: 17%;
+    width: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,45 +63,34 @@ header{
 }
 .textmenu{
     font-size: 1.1rem;
-}
-.homemobile{
-    display: none;
-}
-.mobilemenu {
-    display: block;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-.mobilemenu span{
-    display: block;
-    margin: 1.5rem 0;
-}
-.mobilemenu a:hover{
-    transition-timing-function: ease;
-    transition-duration: 0.7s;
-    color: #EF3446;
-    border-radius: 5px;
-    cursor: pointer;
+    font-weight: bolder;
 }
 @media screen and (max-width: 1440px){
-    .divlogo{
-        width: 18%;
-    }
-}
-@media screen and (max-width: 1024px){
     header{
-        width: 100%;
         padding: 2rem 15%;
-        box-sizing: border-box;
     }
     .divlogo{
         width: 22%;
     }
+    .divtext{
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    header{
+        padding: 2rem 12%;
+    }
+    .divlogo{
+        width: 25%;
+    }
     .divtext {
-        gap: 1.2rem;
+        gap: 1rem;
     }
     .divsuporte{
-        gap: 1.2rem;
+        gap: 1rem;
+    }
+    .textmenu{
+        font-size: 1rem;
     }
 }
 @media screen and (max-width: 768px){
@@ -110,27 +99,5 @@ header{
     }
     .divlogo{
         width: 100%;
-    }
-    .homemobile{
-        display: block;
-        font-weight: bold;
-    }
-    .textmenu{
-        font-size: 1.3em;
-    }
-    .divlogo{
-        flex-direction: column;
-        gap: 2rem;
-    }
-}
-@media screen and (max-width: 425px){
-    .divlogo{
-        width: 100%;
-    }
-    .divlogo{
-        flex-direction: column;
-    }
-    .textmenu{
-        font-size: 1.1rem;
     }
 }
