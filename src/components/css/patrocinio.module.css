@@ -91,6 +91,7 @@
 @media screen and (max-width: 425px){
     .patrocinio{
         padding: 2rem 10%;
+        margin-top: -2rem;
     }
     .patrocinioname{
         font-size: 1.9rem;
