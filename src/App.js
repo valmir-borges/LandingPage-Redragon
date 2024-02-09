@@ -4,6 +4,7 @@ import Patrocinio from './components/Patrocinio'
 import Carrossel from './components/Carrossel';
 import 'swiper/css/effect-fade'
 import Footer from './components/Footer'
+import Motivos from './components/Motivos'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <Socio/>
       <Carrossel/>
+      <Motivos/>
       <Patrocinio/>
       <Footer/>
     </>
