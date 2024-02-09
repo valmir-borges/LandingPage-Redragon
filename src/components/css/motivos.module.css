@@ -31,6 +31,7 @@
     padding: 1rem 1rem;
     border-radius: 10px;
     gap: 1rem;
+    min-height: 224px;
 }
 .titlecard{
     font-size: 1.2rem;
